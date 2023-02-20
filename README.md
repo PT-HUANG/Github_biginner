@@ -40,6 +40,8 @@ git commit -am "關於版本的敘述內容"
 
 切換branch git checkout <branch的名稱> (會自動切換到最新版本)
 
+創建分支，並切換過去 git checkout -b <new_branch>
+
 合併branch git merge <branch的名稱>   (將<branch的名稱>合併進來)
 
 當出現 conlict 提示時表示兩個相同檔案存在衝突，可以用 git status 查看是哪個檔案
@@ -58,7 +60,11 @@ git commit -am "關於版本的敘述內容"
 
 Github上可以直接使用Merge的功能，Merge後抓下來記得要刪除本機原來的新Branch
 
+更改 commit message git commit --amend
 
+回到上一個commit的狀態 
+git reset HEAD^ --hard (不保留更改的內容)
+git reset HEAD^ --soft (保留commit前更改的內容，系統預設為soft可不加)
 
 
 
