@@ -35,6 +35,14 @@ git add .
 
 git commit -am "關於版本的敘述內容"
 
+#更改 commit message git commit --amend
+
+#回到上一個commit的狀態 
+
+git reset HEAD^ --hard (不保留更改的內容)
+
+git reset HEAD^ --soft (保留commit前更改的內容，系統預設為soft可不加)
+
 #回到之前的版本 git checkout <版本號>
 
 #開新branch git branch <branch的名稱>
@@ -69,13 +77,7 @@ git commit -am "關於版本的敘述內容"
 
 #Github上可以直接使用Merge的功能，Merge後抓下來記得要刪除本機原來的新Branch
 
-#更改 commit message git commit --amend
 
-#回到上一個commit的狀態 
-
-git reset HEAD^ --hard (不保留更改的內容)
-
-git reset HEAD^ --soft (保留commit前更改的內容，系統預設為soft可不加)
 
 
 
