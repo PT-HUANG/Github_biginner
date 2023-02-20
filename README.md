@@ -54,6 +54,11 @@ git commit -am "關於版本的敘述內容"
 
 將別人的repository複製到自己的github頁面 在github上選擇 fork 接著 git clone <複製的SSH網址> (更改後可上傳)
 
+建立新的Branch後上傳 git push origin <新的Branch名稱>
+
+Github上可以直接使用Merge的功能，Merge後抓下來記得要刪除本機原來的新Branch
+
+
 
 
 
