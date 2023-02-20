@@ -1,2 +1,1 @@
-# Github_biginner
-# Github_biginner
+# 這是我的第一次用github
