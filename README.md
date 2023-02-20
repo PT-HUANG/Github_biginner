@@ -7,7 +7,7 @@
 
 #歷史紀錄 git log 或 git log --oneline (簡短呈現)
 
-#要忽略的檔案(資料夾) vim .gitignore 輸入要忽略的檔名(記得檔案名稱底下要多一行空格)
+#要忽略的檔案(資料夾) vim .gitignore 輸入要忽略的檔名(檔案名稱底下要多一行空格)
 
 #加入版本控制 git add <file> 或 git add . (全選的意思)
 
@@ -39,11 +39,15 @@ git commit -am "關於版本的敘述內容"
 
 #開新branch git branch <branch的名稱>
 
+#修改branch的名稱 切換到要修改的branch  git branch -m <新的名稱>
+
 #查看目前的branch狀況 git branch -v
 
 #刪除branch git branch -d <branch的名稱>
 
 #切換branch git checkout <branch的名稱> (會自動切換到最新版本)
+
+#抓取遠端的branch git checkout <遠端的branch>
 
 #創建分支，並切換過去 git checkout -b <new_branch>
 
