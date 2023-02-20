@@ -7,8 +7,10 @@ git 指令筆記
 
 查看狀態 git status
 
+歷史紀錄 git log  git log --oneline 簡短呈現
+
 要忽略的檔案(資料夾)
-vim .gitignore 將要忽略的檔案名稱輸入進去即可完成
+vim .gitignore 將要忽略的檔案名稱輸入進去即可完成(記得檔案名稱底下要多一行空格)
 
 加入版本控制 git add <file> or git add . (全選的意思)
 
@@ -28,11 +30,7 @@ git add .
 
 git commit -am "關於版本的敘述內容"
 
-歷史紀錄 git log  git log --oneline 簡短呈現
-
 回到之前的版本 git checkout <版本號>
-
-回到這個Branch的最新版本 git checkout master
 
 開新branch git branch <branch的名稱>
 
@@ -40,18 +38,21 @@ git commit -am "關於版本的敘述內容"
 
 刪除branch git branch -d <branch的名稱>
 
-切換branch git checkout <branch的名稱>
+切換branch git checkout <branch的名稱> (會自動切換到最新版本)
 
-合併branch git merge <branch的名稱>   **將<branch的名稱>合併進來**
+合併branch git merge <branch的名稱>   (將<branch的名稱>合併進來)
 
 當出現 conlict 提示時表示兩個相同檔案存在衝突，可以用 git status 查看是哪個檔案
 
 使用vim 編輯檔案修正完成後再一次commit，將原本的branch刪除 git branch -d <branch的名稱> 即完成branch的合併
 
+上傳新版本至github git push origin main
+  
+將github上的版本抓到電腦裡面 git pull origin main 
 
+將別人的repository抓到電腦裡面 git clone <複製的SSH網址> (但是更改後不能上傳)
 
-
-
+將別人的repository複製到自己的github頁面 在github上選擇 fork 接著 git clone <複製的SSH網址> (更改後可上傳)
 
 
 
